@@ -9,6 +9,9 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-#
+
 # Laravel installer (Composer global bin)
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# Load secret API keys
+[ -f ~/.env.secrets ] && source ~/.env.secrets
