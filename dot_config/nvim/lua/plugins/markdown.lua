@@ -4,6 +4,7 @@ return {
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
     build = "cd app && npm install",
+    pin = true,
   },
   {
     "MeanderingProgrammer/render-markdown.nvim",
