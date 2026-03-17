@@ -15,3 +15,6 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Load secret API keys
 [ -f ~/.env.secrets ] && source ~/.env.secrets
+
+# Cargo (Rust) binaries
+export PATH="$HOME/.cargo/bin:$PATH"
