@@ -21,3 +21,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go binaries
 export PATH="$HOME/go/bin:$PATH"
+
+# Zoxide - smarter cd
+eval "$(zoxide init bash)"
