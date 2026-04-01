@@ -6,7 +6,11 @@
 source ~/.local/share/omarchy/default/bash/rc
 
 # Add your own exports, aliases, and functions here.
-#
+
+# Clipboard aliases for Wayland
+alias copy='wl-copy'
+alias paste='wl-paste'
+
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 
@@ -24,3 +28,8 @@ export PATH="$HOME/go/bin:$PATH"
 
 # Zoxide - smarter cd
 eval "$(zoxide init bash)"
+
+source /home/daniel/.config/broot/launcher/bash/br
+
+# Usenet/NNTP server
+export NNTPSERVER=news.eternal-september.org
