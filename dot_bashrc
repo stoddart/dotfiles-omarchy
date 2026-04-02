@@ -1,3 +1,7 @@
+# User-specific binaries (scripts, pip-installed tools, etc.)
+# This ensures local tools take precedence over system ones.
+export PATH="$HOME/.local/bin:$PATH"
+
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
@@ -29,7 +33,15 @@ export PATH="$HOME/go/bin:$PATH"
 # Zoxide - smarter cd
 eval "$(zoxide init bash)"
 
+# Broot integration: allows the 'br' command to change the shell's
+# working directory upon exit.
 source /home/daniel/.config/broot/launcher/bash/br
 
 # Usenet/NNTP server
 export NNTPSERVER=news.eternal-september.org
+
+# --- Application Aliases ---
+
+# PyChess: Silence GTK/asyncio teardown warnings on exit.
+# These errors are harmless but clutter the terminal on modern Python versions.
+alias pychess='/usr/bin/pychess 2>/dev/null'
