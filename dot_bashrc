@@ -1,13 +1,18 @@
-# User-specific binaries (scripts, pip-installed tools, etc.)
-# This ensures local tools take precedence over system ones.
-export PATH="$HOME/.local/bin:$PATH"
+# vim: set filetype=bash:
 
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
+# User-specific binaries (scripts, pip-installed tools, etc.)
+export PATH="$HOME/.local/bin:$PATH"
+
 # All the default Omarchy aliases and functions
-# (don't mess with these directly, just overwrite them here!)
+# (don't mess with these directly, just overwrite them here!
 source ~/.local/share/omarchy/default/bash/rc
+# User-specific binaries (scripts, pip-installed tools, etc.)
+
+# This ensures local tools take precedence over system ones.
+export PATH="$HOME/.local/bin:$PATH"
 
 # Add your own exports, aliases, and functions here.
 
