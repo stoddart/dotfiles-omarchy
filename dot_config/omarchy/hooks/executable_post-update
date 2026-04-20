@@ -1,0 +1,10 @@
+#!/bin/bash
+# Restart hypridle after system update to ensure lock screen works
+systemctl --user restart hypridle
+
+# Fix wireplumber state-stream.lua crash
+sudo cp ~/.local/share/omarchy/fixes/state-stream.lua /usr/share/wireplumber/scripts/node/state-stream.lua
+systemctl --user stop wireplumber
+rm -rf ~/.local/state/wireplumber
+systemctl --user start wireplumber
+wpctl set-volume @DEFAULT_AUDIO_SINK@ 100%
