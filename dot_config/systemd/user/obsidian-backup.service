@@ -1,0 +1,6 @@
+[Unit]
+Description=Obsidian Vault Backup
+
+[Service]
+ExecStart=/home/daniel/.local/bin/obsidian-backup
+

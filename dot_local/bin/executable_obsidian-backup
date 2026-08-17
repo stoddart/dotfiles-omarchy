@@ -1,0 +1,5 @@
+#!/bin/bash
+cd "/home/daniel/Documents/Obsidian Vault" || exit 1
+git add -A
+git commit -m "Auto backup: $(date '+%Y-%m-%d %H:%M')" || exit 0
+git push origin master
