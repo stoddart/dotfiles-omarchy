@@ -3,3 +3,9 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+source /home/daniel/.config/broot/launcher/bash/br
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/daniel/.local/bin:$PATH"
